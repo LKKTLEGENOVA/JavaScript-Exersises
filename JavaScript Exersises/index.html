@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript lesson</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="demo">What Can JavaScript Do?</h1>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "JavaScript can do a lot of things!"'>Click!</button>
+    <p id="Par">This is javascript lesson</p>
+    <button type="button" onclick='document.getElementById("Par").innerHTML = "JavaScript is an interesting lesson!"'>Click!</button>
+    <br><br>
+
+<img id="myImage" src="almaty.jpg" style="width:300px">
+
+<br><br>
+
+<button onclick="document.getElementById('myImage').src='almaty.jpg'">Almaty</button>
+<button onclick="document.getElementById('myImage').src='astana.jpg'">Astana</button>
+
+<br><br>
+
+
+<p id="txt">JavaScript can change the style of an HTML element</p>
+<button type="button" onclick="document.getElementById('txt').style.fontSize='35px'">Click Me!</button>
+
+<br><br>
+
+
+<!-- task 4 -->
+<p>Show me the time.</p>
+<p id="time" style="display:none">12:30 PM</p>
+<button type="button" onclick="document.getElementById('time').style.display='block'">Show Time</button>
+<button type="button" onclick="document.getElementById('time').style.display='none'">Hide Time</button>
+
+
+
+<!--task 7-->
+<p id="P1"> task 7. result: </p>
+
+<!--task 8-->
+<h1>Today's Date is:</h1>
+<p id="date"></p>
+
+<!--task 9-->
+<h1>Leap Year Checker</h1>
+<label for="yearInput">Enter a year: </label>
+<input type="number" id="yearInput">
+<button onclick="checkLeapYear()">Check</button>
+
+<p id="result"></p>
+<!--task 10-->
+<h1>Multiplication and Division Calculator</h1>
+<form>
+    <label for="num1">1st Number: </label>
+    <input type="number" id="num1" required>
+    <br><br>
+    <label for="num2">2nd Number: </label>
+    <input type="number" id="num2" required>
+    <br><br>
+    <button type="button" onclick="multiply()">Multiply</button>
+    <button type="button" onclick="divide()">Divide</button>
+</form>
+
+<h2>The Result Is: <span id="resultcalcul"></span></h2>
+
+
+<!--task 11-->
+<h1>Temperature Converter</h1>
+<p>Enter temperature in Celsius or Fahrenheit:</p>
+<label for="celsius">Celsius: </label>
+<input type="number" id="celsius" placeholder="Celsius">
+<button type="button" onclick="celsiusToFahrenheit()">Convert to Fahrenheit</button>
+<br><br>
+<label for="fahrenheit">Fahrenheit: </label>
+<input type="number" id="fahrenheit" placeholder="Fahrenheit">
+<button type="button" onclick="fahrenheitToCelsius()">Convert to Celsius</button>
+<br><br>
+<p id="tempResult"></p>
+
+<!--Even or Odd task 12-->
+<h1>Even or Odd Checker</h1>
+<label for="number">Enter a number: </label>
+<input type="number" id="number">
+<button type="button" onclick="checkEvenOdd()">Check</button>
+<p id="evenOddResult"></p>
+
+<!--task 13 largest or smallest-->
+<h1>Find the Largest and Smallest Number</h1>
+<label for="num1">Number 1: </label><input type="number" id="num1"><br><br>
+<label for="num2">Number 2: </label><input type="number" id="num2"><br><br>
+<label for="num3">Number 3: </label><input type="number" id="num3"><br><br>
+<button type="button" onclick="findLargestAndSmallest()">Find</button>
+<p id="largestSmallestResult"></p>
+
+<!--Heron Formula task 14-->
+<h1>Triangle Area Calculator (Heron's Formula)</h1>
+<label for="side1">Side 1: </label><input type="number" id="side1"><br><br>
+<label for="side2">Side 2: </label><input type="number" id="side2"><br><br>
+<label for="side3">Side 3: </label><input type="number" id="side3"><br><br>
+<button type="button" onclick="calculateTriangleArea()">Calculate Area</button>
+<p id="triangleAreaResult"></p>
+
+<!--Factorial Calcul task 15-->
+<h1>Factorial Calculator</h1>
+<label for="factorialInput">Enter a number: </label>
+<input type="number" id="factorialInput">
+<button type="button" onclick="calculateFactorial()">Calculate</button>
+<p id="factorialResult"></p>
+
+
+<!-- Count Vowels and Consonants in a String task 16-->
+<h1>Vowel and Consonant Counter</h1>
+<label for="inputString">Enter a string: </label>
+<input type="text" id="inputString">
+<button type="button" onclick="countVowelsConsonants()">Count</button>
+<p id="countResult"></p>
+
+<!--Convert Seconds into Hours and Minutes-->
+<h1>Convert Seconds into Hours and Minutes</h1>
+<label for="secondsInput">Enter seconds: </label>
+<input type="number" id="secondsInput">
+<button type="button" onclick="convertSeconds()">Convert</button>
+<p id="timeResult"></p>
+
+<!--Find the Most Frequent Number in an Array task 18-->
+<h1>Find Most Frequent Number</h1>
+<label for="arrayInput">Enter comma-separated numbers: </label>
+<input type="text" id="arrayInput" placeholder="e.g., 1,2,3,1,1,2,3">
+<button type="button" onclick="findMostFrequent()">Find</button>
+<p id="mostFrequentResult"></p>
+
+<!--Fibonacci Series Calculation task 19-->
+<h1>Fibonacci Sequence Calculator</h1>
+<label for="fibInput">Enter the number of terms: </label>
+<input type="number" id="fibInput">
+<button type="button" onclick="calculateFibonacci()">Generate</button>
+<p id="fibResult"></p>
+
+<!--Days Left Before New Year task 20-->
+<h1>Days Left Before New Year</h1>
+<button type="button" onclick="calculateDaysLeft()">Calculate Days</button>
+<p id="daysLeftResult"></p>
+
+<script src="index.js"></script>
+
+
+
+</body>
+</html>
